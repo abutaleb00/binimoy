@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Binimoy -SBI Bangladesh.
+        </title>
+        <meta charset="utf-8"></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        <!-- responsive screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"></meta>
+        <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="../resources/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="../resources/bootstrap-datepicker/css/bootstrap-datepicker.min.css"></link>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../resources/font-awesome/css/font-awesome.min.css"></link>
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../resources/css/ionicons.min.css"></link>
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="../resources/css/abs.css"></link>
+        <link rel="stylesheet" href="../resources/css/skins/_all-skins.min.css"></link>
+
+        <!-- jQuery 3 -->
+        <script src="../resources/js/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="../resources/js/bootstrap.min.js"></script>
+        <script src="../resources/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <!-- SlimScroll -->
+        <script src="../resources/js/jquery.slimscroll.min.js"></script>
+        <!-- iclique App -->
+        <script src="../resources/js/abs.min.js"></script>
+       
+    </head>
+
+    <body class="hold-transition skin-blue fixed sidebar-mini">
+        <!-- Main wrapper -->
+
+        <div class="wrapper">
+            <!-- Left side Menu -->
+
+            <header class="main-header">
+                <!-- Logo -->
+
+                <a href="dashboard.html" class="logo">
+                    <!-- Mini logo for sidebar mini 50x50 pixels -->
+
+                    <span class="logo-mini">
+                        <b>DBS</b>
+                    </span>
+
+                    <!-- logo for regular state and mobile devices -->
+
+                    <span class="logo-lg">
+                        <img
+                            src="../resources/img/logo.png"
+                            alt="Logo"
+                            width="200px"
+                            height="auto"
+                            >
+                    </span>
+                </a>
+
+                <!-- Header Navbar -->
+
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button -->
+
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <!-- Page Menu Title -->
+                    <div class="sidebar-title">Detail Reports</div>
+                    <!-- Page Menu Title -->
+                    <div class="navbar-custom-menu">
+
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="../resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+
+                                    <span class="hidden-xs hidden-sm">Anisul Haque</span>
+                                </a>
+
+                                <ul class="dropdown-menu top-right-menu">
+                                    <li class="top-right-menu-li">
+                                        <a href="">
+                                            <i class="fa fa-user-circle-o"></i> User Profile
+                                        </a>
+                                    </li>
+
+                                    <li class="top-right-menu-li">
+                                        <a href="">
+                                            <i class="fa fa-key"></i> Change Password
+                                        </a>
+                                    </li>
+
+                                    <li class="top-right-menu-li">
+                                        <a href="../index.html">
+                                            <i class="fa fa-power-off"></i> Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+
+            <aside class="main-sidebar">
+                <section class="sidebar">
+                    <ul class="sidebar-menu" data-widget="tree">
+						<li class="">
+                            <a href="../dashboard.html">
+                                <i class="fa fa-home"></i>
+
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-users"></i> <span>User Registration</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="/user-list.html"><i class="fa fa-circle-o"></i> Customer List</a></li>
+                                <li><a href="/user-registration.html"><i class="fa fa-circle-o"></i> Create User</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-exchange"></i> <span>Direct Pay</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="/send-money.html"><i class="fa fa-circle-o"></i> Send money to another </a></li>
+                                <li><a href="/payment-merchant.html"><i class="fa fa-circle-o"></i> Payment to Merchant</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-usd"></i> <span>Disburse Funds/Salary</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="../transactions.html">
+                                <i class="fa fa-outdent"></i> <span>View Transactions</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="../disputes.html">
+                                <i class="fa fa-info-circle"></i> <span>Launch Disputes</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-pie-chart"></i> <span>Reports</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="transaction-report.html"><i class="fa fa-circle-o"></i> Transaction Report </a></li>
+                                <li><a href="sent-details-report.html"><i class="fa fa-circle-o"></i> Sent RTP Details Report</a></li>
+                                <li><a href="receive-details-report.html"><i class="fa fa-circle-o"></i> Received RTP Details Report</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+
+            <div class="content-wrapper">
+                <!-- Main content -->
+
+                <section class="content">
+                    <!-- Content Section -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-primary">
+                                <!-- Table -->
+                                <div class="box-body" style="overflow-x: scroll;margin-right: 10px;">
+                                    <div style="border-bottom: 1px solid #ddd;padding:5px"><input type="button" value="print" class="btn btn-success" id="print"></div>
+                                    <div id="section-to-print" style="padding: 5px 20px;" class="custom-row col-md-12 special">
+                                        <div>
+                                            <P style="font-size:16px;font-weight:bold;">Binimoy - SBI Bangladesh</P>
+											<p style="font-size:14px;font-weight:bold;margin-bottom: 0px;">Sent RTP Details Report</p>
+											<P style="font-size:11px">Date: 01-01-2021 To 01-12-2022</P>
+											<P style="font-size:10px; font-weight:bold;">Print Date: 08-12-22 10.45.43</P>
+                                        </div>
+
+                                        <table id="example" class="special table table-bordered nowrap border responsive" style="width: 100%; border:1px solid;border: 1px solid #dddddd;white-space:nowrap;">
+                                            <thead style="font-size:10px;">
+                                                <tr >
+                                                    <th style="font-weight: bold;">SL No</th>
+                                                    <th style="font-weight: bold;">Transaction Id</th>
+                                                    <th style="font-weight: bold;">Date</th>
+                                                    <th style="font-weight: bold;">Origin Bank</th>
+                                                    <th style="font-weight: bold;">Origin Branch</th>
+                                                    <th style="font-weight: bold;">Origin Name</th>
+                                                    <th style="font-weight: bold;">Origin Binimoy Id</th>
+                                                    <th style="font-weight: bold;">Amount</th>
+                                                    <th style="font-weight: bold;">Recv Bank</th>
+                                                    <th style="font-weight: bold;">Recv Name</th>
+                                                    <th style="font-weight: bold;">Recv Binimoy Id</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody style="text-align:right;">
+												<tr>
+                                                    <td style="text-align: left;">1</td>
+                                                    <td style="text-align: left;">OURB201506181000010768</td>
+                                                    <td style="text-align: left;">9/27/2022</td>
+                                                    <td style="text-align: left;">SBI Bangladesh</td>
+                                                    <td style="text-align: right;">Gulshan</td>
+                                                    <td style="text-align: right;">Sakhawat Hossain</td>
+                                                    <td style="text-align: right;">sakhawat@binimoy</td>
+                                                    <td style="text-align: right;">1000.00</td>
+                                                    <td style="text-align: right;">Agrani Bank</td>
+                                                    <td style="text-align: right;">Kamal Hossain</td>
+                                                    <td style="text-align: right;">kamal@binimoy</td>
+                                                </tr>
+												<tr>
+                                                    <td style="text-align: left;">2</td>
+                                                    <td style="text-align: left;">OURB201506181000010771</td>
+                                                    <td style="text-align: left;">9/27/2022</td>
+                                                    <td style="text-align: left;">SBI Bangladesh</td>
+                                                    <td style="text-align: right;">Head Office</td>
+                                                    <td style="text-align: right;">Irdis Hossain</td>
+                                                    <td style="text-align: right;">sakhawat@binimoy</td>
+                                                    <td style="text-align: right;">35000.00</td>
+                                                    <td style="text-align: right;">AB Bank</td>
+                                                    <td style="text-align: right;">Masum Rana</td>
+                                                    <td style="text-align: right;">masum12@binimoy</td>
+                                                </tr>
+												<tr>
+                                                    <td style="text-align: left;">3</td>
+                                                    <td style="text-align: left;">OURB201506181000010768</td>
+                                                    <td style="text-align: left;">9/27/2022</td>
+                                                    <td style="text-align: left;">SBI Bangladesh</td>
+                                                    <td style="text-align: right;">Gulshan</td>
+                                                    <td style="text-align: right;">Abdul jalil</td>
+                                                    <td style="text-align: right;">jalil12@binimoy</td>
+                                                    <td style="text-align: right;">1200.00</td>
+                                                    <td style="text-align: right;">Standard Bank</td>
+                                                    <td style="text-align: right;">Amzad Hossain</td>
+                                                    <td style="text-align: right;">amzad098@binimoy</td>
+                                                </tr>
+												<tr>
+                                                    <td style="text-align: left;">4</td>
+                                                    <td style="text-align: left;">OURB201506181000010768</td>
+                                                    <td style="text-align: left;">9/27/2022</td>
+                                                    <td style="text-align: left;">SBI Bangladesh</td>
+                                                    <td style="text-align: right;">Gulshan</td>
+                                                    <td style="text-align: right;">Sakhawat Hossain</td>
+                                                    <td style="text-align: right;">sakhawat@binimoy</td>
+                                                    <td style="text-align: right;">1000.00</td>
+                                                    <td style="text-align: right;">Agrani Bank</td>
+                                                    <td style="text-align: right;">Kamal Hossain</td>
+                                                    <td style="text-align: right;">kamal@binimoy</td>
+                                                </tr>
+												<tr>
+                                                    <td style="text-align: left;">5</td>
+                                                    <td style="text-align: left;">OURB201506181000010771</td>
+                                                    <td style="text-align: left;">9/27/2022</td>
+                                                    <td style="text-align: left;">SBI Bangladesh</td>
+                                                    <td style="text-align: right;">Head Office</td>
+                                                    <td style="text-align: right;">Irdis Hossain</td>
+                                                    <td style="text-align: right;">sakhawat@binimoy</td>
+                                                    <td style="text-align: right;">35000.00</td>
+                                                    <td style="text-align: right;">AB Bank</td>
+                                                    <td style="text-align: right;">Masum Rana</td>
+                                                    <td style="text-align: right;">masum12@binimoy</td>
+                                                </tr>
+												<tr>
+                                                    <td style="text-align: left;">6</td>
+                                                    <td style="text-align: left;">OURB201506181000010768</td>
+                                                    <td style="text-align: left;">9/27/2022</td>
+                                                    <td style="text-align: left;">SBI Bangladesh</td>
+                                                    <td style="text-align: right;">Gulshan</td>
+                                                    <td style="text-align: right;">Abdul jalil</td>
+                                                    <td style="text-align: right;">jalil12@binimoy</td>
+                                                    <td style="text-align: right;">1200.00</td>
+                                                    <td style="text-align: right;">Standard Bank</td>
+                                                    <td style="text-align: right;">Amzad Hossain</td>
+                                                    <td style="text-align: right;">amzad098@binimoy</td>
+                                                </tr>
+												<tr>
+                                                    <td style="text-align: left;">7</td>
+                                                    <td style="text-align: left;">OURB201506181000010768</td>
+                                                    <td style="text-align: left;">9/27/2022</td>
+                                                    <td style="text-align: left;">SBI Bangladesh</td>
+                                                    <td style="text-align: right;">Gulshan</td>
+                                                    <td style="text-align: right;">Sakhawat Hossain</td>
+                                                    <td style="text-align: right;">sakhawat@binimoy</td>
+                                                    <td style="text-align: right;">1000.00</td>
+                                                    <td style="text-align: right;">Agrani Bank</td>
+                                                    <td style="text-align: right;">Kamal Hossain</td>
+                                                    <td style="text-align: right;">kamal@binimoy</td>
+                                                </tr>
+												<tr>
+                                                    <td style="text-align: left;">8</td>
+                                                    <td style="text-align: left;">OURB201506181000010771</td>
+                                                    <td style="text-align: left;">9/27/2022</td>
+                                                    <td style="text-align: left;">SBI Bangladesh</td>
+                                                    <td style="text-align: right;">Head Office</td>
+                                                    <td style="text-align: right;">Irdis Hossain</td>
+                                                    <td style="text-align: right;">sakhawat@binimoy</td>
+                                                    <td style="text-align: right;">35000.00</td>
+                                                    <td style="text-align: right;">AB Bank</td>
+                                                    <td style="text-align: right;">Masum Rana</td>
+                                                    <td style="text-align: right;">masum12@binimoy</td>
+                                                </tr>
+												<tr>
+                                                    <td style="text-align: left;">9</td>
+                                                    <td style="text-align: left;">OURB201506181000010768</td>
+                                                    <td style="text-align: left;">9/27/2022</td>
+                                                    <td style="text-align: left;">SBI Bangladesh</td>
+                                                    <td style="text-align: right;">Gulshan</td>
+                                                    <td style="text-align: right;">Abdul jalil</td>
+                                                    <td style="text-align: right;">jalil12@binimoy</td>
+                                                    <td style="text-align: right;">1200.00</td>
+                                                    <td style="text-align: right;">Standard Bank</td>
+                                                    <td style="text-align: right;">Amzad Hossain</td>
+                                                    <td style="text-align: right;">amzad098@binimoy</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left;">10</td>
+                                                    <td style="text-align: left;">OURB201506181000010768</td>
+                                                    <td style="text-align: left;">9/27/2022</td>
+                                                    <td style="text-align: left;">SBI Bangladesh</td>
+                                                    <td style="text-align: right;">Gulshan</td>
+                                                    <td style="text-align: right;">Sakhawat Hossain</td>
+                                                    <td style="text-align: right;">sakhawat@binimoy</td>
+                                                    <td style="text-align: right;">1000.00</td>
+                                                    <td style="text-align: right;">Agrani Bank</td>
+                                                    <td style="text-align: right;">Kamal Hossain</td>
+                                                    <td style="text-align: right;">kamal@binimoy</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- /.Table -->
+                            </div>      
+                        </div> 
+                    </div>
+
+                    <!-- /.row -->
+                    <!-- /.Content Section -->
+                </section>
+
+                <!-- /.content -->
+            </div>
+
+            <!-- /.content-wrapper -->
+            <!-- Footer Content -->
+
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>Version</b> 1.0.1
+                </div>
+
+                <strong>
+                Copyright &copy; 2019-2020 SBI Bangladesh
+            </strong> All rights reserved. Developed by
+
+            <a href="https://www.commlinkinfotech.com/">Commlink Info Tech Ltd.</a>
+            </footer>
+
+            <!-- /.Footer Content -->
+        </div>
+        <script>
+            document.querySelector("#print").addEventListener("click", function () {
+                window.print();
+            });
+        </script>
+        <!-- ./wrapper -->
+    </body>
+
+</html>
