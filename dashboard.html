@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Binimoy -SBI Bangladesh
+    </title>
+
+    <meta charset="utf-8"></meta>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+
+    <!-- responsive screen width -->
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"></meta>
+
+    <!-- Bootstrap 3.3.7 -->
+
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css"></link>
+
+    <link rel="stylesheet" href="resources/bootstrap-datepicker/css/bootstrap-datepicker.min.css"></link>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css"></link>
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="resources/css/ionicons.min.css"></link>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="resources/css/abs.css"></link>
+    <link rel="stylesheet" href="resources/css/skins/_all-skins.min.css"></link>
+    <!-- Google Font -->
+    <!-- jQuery 3 -->
+    <script src="resources/js/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="resources/js/bootstrap.min.js"></script>
+    <script src="resources/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="resources/js/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="resources/js/iCheck/icheck.min.js"></script>
+    <!-- iclique App -->
+    <script src="resources/js/abs.min.js"></script>
+    <!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
+
+</head>
+
+<body class="hold-transition skin-blue fixed sidebar-mini">
+    <!-- Main wrapper -->
+
+    <div class="wrapper">
+        <!-- Left side Menu -->
+
+        <header class="main-header">
+            <!-- Logo -->
+
+            <a href="dashboard.html" class="logo">
+                <!-- Mini logo for sidebar mini 50x50 pixels -->
+
+                <span class="logo-mini">
+                    <b>DBS</b>
+                </span>
+
+                <!-- logo for regular state and mobile devices -->
+
+                <span class="logo-lg">
+                    <img
+                        src="resources/img/logo.png"
+                        alt="Logo"
+                        width="200px"
+                        height="auto"
+                    >
+                </span>
+            </a>
+
+            <!-- Header Navbar -->
+
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button -->
+
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+                <!-- Page Menu Title -->
+
+                <div class="sidebar-title">Dashboard</div>
+
+                <!-- Page Menu Title -->
+
+                <div class="navbar-custom-menu">
+                    <!-- <div class="my-search">
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Search Your Content">
+                        <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                    </div>
+                </form>
+            </div> -->
+
+                    <ul class="nav navbar-nav">
+                        <!-- User Account: style can be found in dropdown.less -->
+
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+
+                                <span class="hidden-xs hidden-sm">Anisul Haque</span>
+                            </a>
+
+                            <ul class="dropdown-menu top-right-menu">
+                                <li class="top-right-menu-li">
+                                    <a href="">
+                                        <i class="fa fa-user-circle-o"></i> User Profile
+                                    </a>
+                                </li>
+
+                                <li class="top-right-menu-li">
+                                    <a href="">
+                                        <i class="fa fa-key"></i> Change Password
+                                    </a>
+                                </li>
+
+                                <li class="top-right-menu-li">
+                                    <a href="">
+                                        <i class="fa fa-power-off"></i> Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Left side Menu -->
+        <!-- =============================================== -->
+        <!-- Left side column. contains the sidebar -->
+        <!-- sidebar -->
+
+        <aside class="main-sidebar">
+                <section class="sidebar">
+                    <ul class="sidebar-menu" data-widget="tree">
+						<li class="">
+                            <a href="dashboard.html">
+                                <i class="fa fa-home"></i>
+
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-users"></i> <span>User Registration</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="/user-list.html"><i class="fa fa-circle-o"></i> Customer List</a></li>
+                                <li><a href="/user-registration.html"><i class="fa fa-circle-o"></i> Create User</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-exchange"></i> <span>Direct Pay</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="/send-money.html"><i class="fa fa-circle-o"></i> Send money to another </a></li>
+                                <li><a href="/payment-merchant.html"><i class="fa fa-circle-o"></i> Payment to Merchant</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-usd"></i> <span>Disburse Funds/Salary</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="transactions.html">
+                                <i class="fa fa-outdent"></i> <span>View Transactions</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="disputes.html">
+                                <i class="fa fa-info-circle"></i> <span>Disputes List</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-pie-chart"></i> <span>Reports</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="report/transaction-report.html"><i class="fa fa-circle-o"></i> Transaction Report </a></li>
+                                <li><a href="/payment-merchant.html"><i class="fa fa-circle-o"></i> Sent RTP Details Report</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+        </aside>
+
+        <!-- /.sidebar -->
+        <!-- =============================================== -->
+        <!-- Content Wrapper. Contains page content -->
+
+        <div class="content-wrapper">
+            <!-- Main content -->
+
+            <section class="content">
+                <!-- Content Section -->
+                <div class="row">
+                    <div class="col-lg-4 col-xs-6">
+                      <!-- small box -->
+                      <div class="small-box1 bg-navy">
+                        <div class="inner">
+                          <h3>255</h3>
+    
+                          <p>Total Customer</p>
+                        </div>
+                        <div class="icon">
+                          <i class="fa fa-users"></i>
+                        </div>
+                        <a href="#"  class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                      </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-4 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box1 bg-teal">
+                          <div class="inner">
+                            <h3>230,098.00</h3>
+      
+                            <p>Received Funds</p>
+                          </div>
+                          <div class="icon">
+                            <i class="fa fa-check-circle"></i>
+                          </div>
+                          <a href="#"  class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                      </div>
+                    <!-- ./col -->
+                    <div class="col-lg-4 col-xs-6">
+                      <!-- small box -->
+                      <div class="small-box1 bg-lime">
+                        <div class="inner">
+                          <h3>12,506,000</h3>
+    
+                          <p>Disburse Funds</p>
+                        </div>
+                        <div class="icon">
+                          <i class="fa fa-check"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                      </div>
+                    </div>
+                    <!-- ./col -->
+                </div>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-lg-4 col-xs-6">
+                        <!-- small box -->
+                        <div class="small-box1 bg-red">
+                          <div class="inner">
+                            <h3>03</h3>
+      
+                            <p>Today's Disputes</p>
+                          </div>
+                          <div class="icon">
+                            <i class="fa fa-warning"></i>
+                          </div>
+                          <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                      </div>
+                    <!-- ./col -->
+                    <div class="col-lg-4 col-xs-6">
+                      <!-- small box -->
+                      <div class="small-box1 bg-orange">
+                        <div class="inner">
+                          <h3>11</h3>
+    
+                          <p>Transaction Canceled</p>
+                        </div>
+                        <div class="icon">
+                          <i class="fa fa-times"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                      </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-4 col-xs-6">
+                      <!-- small box -->
+                      <div class="small-box1 bg-purple">
+                        <div class="inner">
+                          <h3>120</h3>
+    
+                          <p>Transaction Completed</p>
+                        </div>
+                        <div class="icon">
+                          <i class="fa fa-check-square-o"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                      </div>
+                    </div>
+                    <!-- ./col -->
+                </div>
+					<div class="modal fade" id="notification" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document" style="width: fit-content;max-width: 90%;">
+                            <!--Content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Notification</h4>
+                                </div>
+                                <!--Body-->
+                                <div class="modal-body">
+                                    <div class="justify-content-center">
+                                        <p>You have <span style="color: red; font-weight: bold;">3</span> New Notifications!</p>
+                                    </div>
+                                </div>
+								<div class="modal-footer justify-content-center">
+									<button type="button" class="btn btn-success">Let's Check</button>
+								</div>
+                            </div>
+                        </div>
+                        <!--Modal: Name-->
+                    </div>
+
+                    <!-- /.row -->
+                    <!-- /.Content Section -->
+            </section>
+
+            <!-- /.content -->
+            </div>
+
+            <!-- /.content-wrapper -->
+            <!-- Footer Content -->
+
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>Version</b> 1.0.1
+                </div>
+
+                <strong>
+                Copyright &copy; 2019-2020 SBI Bangladesh
+            </strong> All rights reserved. Developed by
+
+            <a href="https://www.commlinkinfotech.com/">Commlink Info Tech Ltd.</a>
+            </footer>
+
+            <!-- /.Footer Content -->
+        </div>
+
+</body>
+
+</html>

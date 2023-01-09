@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            IDTP - Commlink Info Tech Ltd.
+        </title>
+        <meta charset="utf-8"></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        <!-- responsive screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"></meta>
+        <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="resources/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="resources/bootstrap-datepicker/css/bootstrap-datepicker.min.css"></link>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css"></link>
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="resources/css/ionicons.min.css"></link>
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="resources/css/abs.css"></link>
+        <link rel="stylesheet" href="resources/css/skins/_all-skins.min.css"></link>
+
+        <!-- jQuery 3 -->
+        <script src="resources/js/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="resources/js/bootstrap.min.js"></script>
+        <script src="resources/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <!-- SlimScroll -->
+        <script src="resources/js/jquery.slimscroll.min.js"></script>
+        <!-- iclique App -->
+        <script src="resources/js/abs.min.js"></script>
+    </head>
+
+    <body class="hold-transition skin-blue fixed sidebar-mini">
+        <!-- Main wrapper -->
+
+        <div class="wrapper">
+            <!-- Left side Menu -->
+
+            <header class="main-header">
+                <!-- Logo -->
+
+                <a href="dashboard.html" class="logo">
+                    <!-- Mini logo for sidebar mini 50x50 pixels -->
+
+                    <span class="logo-mini">
+                        <b>DBS</b>
+                    </span>
+
+                    <!-- logo for regular state and mobile devices -->
+
+                    <span class="logo-lg">
+                        <img
+                            src="resources/img/logo.png"
+                            alt="Logo"
+                            width="200px"
+                            height="auto"
+                            >
+                    </span>
+                </a>
+
+                <!-- Header Navbar -->
+
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button -->
+
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <!-- Page Menu Title -->
+                    <div class="sidebar-title">Create New User</div>
+                    <!-- Page Menu Title -->
+                    <div class="navbar-custom-menu">
+
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+
+                                    <span class="hidden-xs hidden-sm">Anisul Haque</span>
+                                </a>
+
+                                <ul class="dropdown-menu top-right-menu">
+                                    <li class="top-right-menu-li">
+                                        <a href="">
+                                            <i class="fa fa-user-circle-o"></i> User Profile
+                                        </a>
+                                    </li>
+
+                                    <li class="top-right-menu-li">
+                                        <a href="">
+                                            <i class="fa fa-key"></i> Change Password
+                                        </a>
+                                    </li>
+
+                                    <li class="top-right-menu-li">
+                                        <a href="">
+                                            <i class="fa fa-power-off"></i> Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+
+            <aside class="main-sidebar">
+                <section class="sidebar">
+                    <ul class="sidebar-menu" data-widget="tree">
+						<li class="">
+                            <a href="dashboard.html">
+                                <i class="fa fa-home"></i>
+
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-users"></i> <span>User Registration</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="/user-list.html"><i class="fa fa-circle-o"></i> Customer List</a></li>
+                                <li><a href="/user-registration.html"><i class="fa fa-circle-o"></i> Create User</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-exchange"></i> <span>Direct Pay</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="/send-money.html"><i class="fa fa-circle-o"></i> Send money to another </a></li>
+                                <li><a href="/payment-merchant.html"><i class="fa fa-circle-o"></i> Payment to Merchant</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-usd"></i> <span>Disburse Funds/Salary</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="transactions.html">
+                                <i class="fa fa-outdent"></i> <span>View Transactions</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="disputes.html">
+                                <i class="fa fa-info-circle"></i> <span>Disputes List</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-pie-chart"></i> <span>Reports</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="report/transaction-report.html"><i class="fa fa-circle-o"></i> Transaction Report </a></li>
+                                <li><a href="/payment-merchant.html"><i class="fa fa-circle-o"></i> Sent RTP Details Report</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+        </aside>
+
+            <div class="content-wrapper">
+                <!-- Main content -->
+
+                <section class="content">
+                    <!-- Content Section -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-solid">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">
+                                        User Registration
+                                    </h3>
+                                    <button data-toggle="modal" data-target="#notification" style="padding: 4px 10px" class="btn btn-success pull-right">Bulk User Upload</button>
+                                </div>
+
+                                <div class="box-body">
+                                    <form>
+                                        <div class="col-md-12">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="ApplicantName">Applicant Name <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="ApplicantName" value="" placeholder="Enter Applicant Name"></input>
+                                                </div>
+                                            </div>
+
+                                            <!--  -->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="VID">VID <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="VID" value="" placeholder="Enter VID"></input>
+                                                </div>
+                                            </div>
+											<div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="AccountNumber">Bank Account Number <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="AccountNumber" value="" placeholder="Enter Bank Account Number" ></input>
+                                                </div>
+                                            </div>
+											<div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="EmailID">Email ID <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="EmailID" value="" placeholder="Enter Email ID" ></input>
+                                                </div>
+                                            </div>
+											<div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="MobileNumber">Mobile Number <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="MobileNumber" value="" placeholder="Enter Mobile Number" ></input>
+                                                </div>
+                                            </div>
+											<div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="BranchName">Branch Name <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="BranchName" value="" placeholder="Enter Branch Name" ></input>
+                                                </div>
+                                            </div>
+											<div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="RoutingNumber">Routing Number <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="RoutingNumber" value="" placeholder="Enter Routing Number" ></input>
+                                                </div>
+                                            </div>
+											<div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="Address">Address <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="Address" value="" placeholder="Enter Address" ></input>
+                                                </div>
+                                            </div>
+                                           <div class="col-md-12">
+                                            <div class="form-group">
+                                                <!--<label for="vat" class=" form-control-label">VAT</label>-->
+                                                <input type="button" onclick="window.location.href = 'new-nominee.html';" id="btnSave" class="btn btn-primary pull-right" value="Submit">
+                                            </div>
+											</div>
+
+                                            <!-- /.Section -->
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal fade" id="notification" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document" style="width: fit-content;max-width: 90%;">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">Bulk User Upload</h4>
+                                            </div>
+                                            <!--Body-->
+                                            <div class="modal-body">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Upload Excel File</label>
+                                                        <div class="input-group">
+                                                            <input type="file" class="form-control" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="button" class="btn btn-success">Upload</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Modal: Name-->
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+
+                            <!-- /.box -->
+                        </div>
+                    </div>
+
+                    <!-- /.row -->
+                    <!-- /.Content Section -->
+                </section>
+
+                <!-- /.content -->
+            </div>
+
+            <!-- /.content-wrapper -->
+            <!-- Footer Content -->
+
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>Version</b> 1.0.1
+                </div>
+
+                <strong>
+                    Copyright &copy; 2019-2020
+
+                    <a href="https://www.commlinkinfotech.com/">Commlink Info Tech Ltd.</a>
+
+                    .
+                </strong> All rights reserved.
+            </footer>
+
+            <!-- /.Footer Content -->
+        </div>
+
+        <!-- ./wrapper -->
+    </body>
+
+</html>

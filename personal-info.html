@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Digital Banking System- Commlink Info Tech Ltd.
+        </title>
+        <meta charset="utf-8"></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        <!-- responsive screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"></meta>
+        <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="resources/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="resources/bootstrap-datepicker/css/bootstrap-datepicker.min.css"></link>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css"></link>
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="resources/css/ionicons.min.css"></link>
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="resources/css/abs.css"></link>
+        <link rel="stylesheet" href="resources/css/skins/_all-skins.min.css"></link>
+
+        <!-- jQuery 3 -->
+        <script src="resources/js/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="resources/js/bootstrap.min.js"></script>
+        <script src="resources/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <!-- SlimScroll -->
+        <script src="resources/js/jquery.slimscroll.min.js"></script>
+        <!-- iclique App -->
+        <script src="resources/js/abs.min.js"></script>
+    </head>
+
+    <body class="hold-transition skin-blue fixed sidebar-mini">
+        <!-- Main wrapper -->
+
+        <div class="wrapper">
+            <!-- Left side Menu -->
+
+            <header class="main-header">
+                <!-- Logo -->
+
+                <a href="dashboard.html" class="logo">
+                    <!-- Mini logo for sidebar mini 50x50 pixels -->
+
+                    <span class="logo-mini">
+                        <b>DBS</b>
+                    </span>
+
+                    <!-- logo for regular state and mobile devices -->
+
+                    <span class="logo-lg">
+                        <img
+                            src="resources/img/logo.png"
+                            alt="Logo"
+                            width="200px"
+                            height="auto"
+                            >
+                    </span>
+                </a>
+
+                <!-- Header Navbar -->
+
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button -->
+
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <!-- Page Menu Title -->
+                    <div class="sidebar-title">Create Account</div>
+                    <!-- Page Menu Title -->
+                    <div class="navbar-custom-menu">
+
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="resources/img/user2-160x160.jpg" class="user-image" alt="User Image">
+
+                                    <span class="hidden-xs hidden-sm">Anisul Haque</span>
+                                </a>
+
+                                <ul class="dropdown-menu top-right-menu">
+                                    <li class="top-right-menu-li">
+                                        <a href="">
+                                            <i class="fa fa-user-circle-o"></i> User Profile
+                                        </a>
+                                    </li>
+
+                                    <li class="top-right-menu-li">
+                                        <a href="">
+                                            <i class="fa fa-key"></i> Change Password
+                                        </a>
+                                    </li>
+
+                                    <li class="top-right-menu-li">
+                                        <a href="">
+                                            <i class="fa fa-power-off"></i> Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+
+           <aside class="main-sidebar">
+                <section class="sidebar">
+                    <ul class="sidebar-menu" data-widget="tree">
+						<li class="">
+                            <a href="dashboard.html">
+                                <i class="fa fa-home"></i>
+
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-credit-card-alt"></i> <span>A/C Managment</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="open_account.html"><i class="fa fa-circle-o"></i> New Account</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+
+            <div class="content-wrapper">
+                <!-- Main content -->
+
+                <section class="content">
+                    <!-- Content Section -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-solid">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">
+                                        Savings Account (Individual)
+                                    </h3>
+                                </div>
+
+                                <div class="box-body">
+                                    <form>
+									<div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="nidimg">Photo Matching Score : </label>
+                                            <span class="m-score">55%<span>
+                                        </div>
+                                    </div>
+                                        <div class="col-md-12">
+                                            <div class="form-header">
+                                                <h3 class="box-title">Personal Info</h3>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="firstname">First Name <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="first_name" value="" placeholder="Enter First Name"></input>
+                                                </div>
+                                            </div>
+
+                                            <!--  -->
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="exampletext">Last Name <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="LAST_NAME" value="" placeholder="Enter Last Name"></input>
+                                                </div>
+                                            </div>
+											<div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="exampletext">Full Name <span style="color: red;">*</span><span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="middle_name" value="Ariful Islam Oni" placeholder="Enter Full Name" disabled></input>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="exampletext">Fathers Name <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="fathers_name" value="মোঃ আসলাম শেখ" placeholder="Enter Fathers Name"></input>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="exampletext">Mothers Name <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="mothers_name" value="পারভীন আক্তার" placeholder="Enter Mothers Name"></input>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="exampletext">Spouse Name</label>
+
+                                                    <input type="text" class="form-control" id="spouse_name" value="" placeholder="Enter Mothers Name"></input>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Date of Birth <span style="color: red;">*</span></label>
+
+                                                    <div class="input-group date">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+
+                                                        <input type="text" class="form-control pull-right" value="1997-08-10" placeholder="DD-MM-YYYY" id="datepicker1" disabled></input>
+                                                    </div>
+
+                                                    <!-- /.input group -->
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="exampletext">Nationality <span style="color: red;">*</span></label>
+
+                                                    <select class="form-control" disabled>
+                                                        <option id="nationality" value="bangladeshi">BANGLADESHI</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="exampletext">BIRTH PLACE</label>
+
+                                                    <input type="text" class="form-control" id="BIRTHPLACE" value="" placeholder="Enter BIRTH PLACE"></input>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Identification of Applicant <span style="color: red;">*</span></label>
+
+                                                    <select class="form-control" disabled>
+                                                        <option id="nid" value="nid">National ID</option>
+
+                                                        <option id="passport" value="passport">Passport</option>
+
+                                                        <option id="birthr" value="birthr">Birth Registration</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="exampletext">Identity Number <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" id="nid" value="8252870699" placeholder="Enter Identity Number" disabled></input>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Gender <span style="color: red;">*</span></label>
+
+                                                    <select class="form-control" disabled>
+                                                        <option id="male" value="male">Male</option>
+
+                                                        <option id="female" value="female">Female</option>
+
+                                                        <option id="third" value="third">Third</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Preferred Product <span style="color: red;">*</span></label>
+
+                                                    <select class="form-control" disabled>
+                                                        <option id="saccount" value="saccount">Saving Account</option>
+
+                                                        <option id="caccount" value="caccount">Current Account</option>
+
+                                                        <option id="fdraccount" value="fdraccount">FDR Account</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Presently Resided City</label>
+
+                                                    <select class="form-control">
+                                                        <option id="saccount" value="saccount">Resident</option>
+
+                                                        <option id="ctg" value="ctg">Chattogram City Corporation</option>
+
+                                                        <option id="dhk" value="dhk">Dhaka City Corporation</option>
+
+                                                        <option id="khl" value="khl">Khulna City Corporation</option>
+
+                                                        <option id="nar" value="nar">Narayangonj City Corporation</option>
+
+                                                        <option id="raj" value="raj">Rajshahi City Corporation</option>
+
+                                                        <option id="syl" value="syl">Sylhet City Corporation</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Preferred Branch</label>
+
+                                                    <select class="form-control">
+                                                        <option id="gulshan" value="gulshan">Branch A</option>
+                                                        <option id="gulshan" value="gulshan">Branch B</option>
+                                                        <option id="gulshan" value="gulshan">Branch C</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Resident Status</label>
+
+                                                    <select class="form-control">
+                                                        <option id="resident" value="resident">Resident</option>
+
+                                                        <option id="nonresident" value="nonresident">Non-Resident</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Residential Status</label>
+
+                                                    <select class="form-control">
+                                                        <option id="none" value="">select</option>
+                                                        <option id="own" value="own">Own</option>
+                                                        <option id="rented" value="rented">Rented</option>
+                                                        <option id="others" value="others">Others</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Occupation </label>
+                                                    <select class="form-control">
+                                                        <option value="">select</option>
+                                                        <option value="service">Service</option>
+                                                        <option value="business">Business</option>
+                                                        <option value="others">Others</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Marital status <span style="color: red;">*</span></label>
+                                                    <select class="form-control">
+                                                        <option id="none" value="">select</option>
+                                                        <option id="married" value="married">Married</option>
+                                                        <option id="singale" value="singale">Singale</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="mobile">Mobile Number <span style="color: red;">*</span></label>
+
+                                                    <input type="text" class="form-control" value="01674076543" id="mobile_number" placeholder="Enter Mobile Number"></input>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="email">Email Address <span style="color: red;">*</span></label>
+
+                                                    <input type="email" class="form-control" value="taleb@commlinkinfotech.com" id="email_address" placeholder="Enter Email Address"></input>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Present Address <span style="color: red;">*</span></label>
+                                                    <textarea type="text" rows="2" id="presentAddress" class="form-control" placeholder="Enter Present Address">বাসা/হোল্ডিং:২২৪, গ্রাম/রাস্তা:999, ওয়ার্ড নং-০৯, ডাকঘর:খুলনা জি পি ও-৯০০০, খালিসপুর, খুলনা সিটি কর্পোরেশন, খুলনা</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Permanent Address <span style="color: red;">*</span></label>
+
+                                                    <textarea type="text" rows="2" id="permanentAddress" class="form-control" placeholder="Enter Permanent Address">বাসা/হোল্ডিং:২২৪, গ্রাম/রাস্তা:999, ওয়ার্ড নং-০৯, ডাকঘর:খুলনা জি পি ও-৯০০০, খালিসপুর, খুলনা সিটি কর্পোরেশন, খুলনা</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="box box-primary">
+                                                    <!-- Documents Checklist Heading -->
+                                                    <div class="box-header with-border">
+                                                        <h3 class="box-title">Documents Checklist </h3>
+                                                    </div><span style="color: red;">*</span>
+                                                    <div class="box-body">
+                                                        <div class="form-group">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="Photos" onclick="dynInput(this);">  Photos </label>
+                                                                <label>
+                                                                    <input type="checkbox" name="Signature" onclick="dynInput(this);">  Signature </label>
+                                                                <label>
+                                                                    <input type="checkbox" name="NID Number" onclick="dynInput(this);">  NID Number </label>
+                                                                <label>
+                                                                    <input type="checkbox" name="Passport" onclick="dynInput(this);"> Passport </label>
+                                                                <label>
+                                                                    <input type="checkbox" name=" Birth Certificate Number" onclick="dynInput(this);"> Birth Certificate Number </label>
+                                                                <label>
+                                                                    <input type="checkbox" name="TIN Certificate" onclick="dynInput(this);"> TIN Certificate </label>
+                                                                <label>
+                                                                    <input type="checkbox" name="Photographs" onclick="dynInput(this);"> Driving License Number </label>
+                                                                <label>
+                                                                    <input type="checkbox" name="Utility Bills" onclick="dynInput(this);"> Others </label>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <p id="insertinputs"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           <div class="col-md-12">
+                                            <div class="form-group">
+                                                <!--<label for="vat" class=" form-control-label">VAT</label>-->
+												<input type="button" onclick="window.location.href = 'ocr-result.html';" id="btnSaveExit" class="btn btn-default pull-left" value="Previous">
+                                                <input type="button" onclick="window.location.href = 'new-nominee.html';" id="btnSave" class="btn btn-primary pull-right" value="Save & Next">
+                                            </div>
+											</div>
+
+                                            <!-- /.Section -->
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- /.box-body -->
+                            </div>
+
+                            <!-- /.box -->
+                        </div>
+                    </div>
+
+                    <!-- /.row -->
+                    <!-- /.Content Section -->
+                </section>
+
+                <!-- /.content -->
+            </div>
+
+            <!-- /.content-wrapper -->
+            <!-- Footer Content -->
+
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>Version</b> 1.0.1
+                </div>
+
+                <strong>
+                    Copyright &copy; 2019-2020
+
+                    <a href="https://www.commlinkinfotech.com/">Commlink Info Tech Ltd.</a>
+
+                    .
+                </strong> All rights reserved.
+            </footer>
+
+            <!-- /.Footer Content -->
+        </div>
+
+        <!-- ./wrapper -->
+
+        <script>
+            $('#datepicker').datepicker({
+                uiLibrary: 'bootstrap4'
+            });
+        </script>
+
+        <script>
+            $('#datepicker1').datepicker({
+                uiLibrary: 'bootstrap4'
+            });
+        </script>
+        <script>
+            function dynInput(cbox) {
+                if (cbox.checked) {
+                    var input = document.createElement("input");
+                    input.type = "file";
+                    var div = document.createElement("div");
+                    div.id = cbox.name;
+                    div.innerHTML = "Upload Your " + cbox.name + " " + "Document";
+                    div.appendChild(input);
+                    document.getElementById("insertinputs").appendChild(div);
+                } else {
+                    document.getElementById(cbox.name).remove();
+                }
+            }
+        </script>
+    </body>
+
+</html>
